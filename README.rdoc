@@ -1,3 +1,7 @@
+= Toller
+
+{<img src="https://travis-ci.org/paulbadcock/toller.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/paulbadcock/toller]
+
 == README
 
 This README would normally document whatever steps are necessary to get the
