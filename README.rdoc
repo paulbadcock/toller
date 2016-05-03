@@ -1,6 +1,7 @@
 = Toller
 
 {<img src="https://travis-ci.org/paulbadcock/toller.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/paulbadcock/toller]
+{<img src="https://coveralls.io/repos/github/paulbadcock/toller/badge.svg?branch=master" alt="Coverage Status" />}[https://coveralls.io/github/paulbadcock/toller?branch=master]
 
 == README
 
