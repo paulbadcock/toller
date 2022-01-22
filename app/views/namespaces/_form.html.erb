@@ -1,0 +1,36 @@
+<%= form_with(model: namespace, local: true) do |f| %>
+
+  <%= render "shared/errors", object: namespace %>
+  
+  <%= f.label :name %>
+  <%= f.text_field :name, autofocus: true %>
+
+  <%= f.label :arb %>
+  <%= f.number_field :arb %>  
+
+  <%= f.label :dept_name %>
+  <%= f.text_field :dept_name %>  
+
+  <%= f.label :assyst_svd %>
+  <%= f.text_field :assyst_svd %>
+
+  <%= f.label :vendor_supported %>
+  <%= f.select :vendor_supported, Namespace::VENDORS %> 
+
+  <%= f.label :owner_email %>
+  <%= f.text_field :owner_email %> 
+
+  <%= f.label :technical_owner_email %>
+  <%= f.text_field :technical_owner_email %> 
+
+  <%= f.label :support_document %>
+  <%= f.text_field :support_document %> 
+
+  <%= f.label :support_document_uri %>
+  <%= f.text_field :support_document_uri %> 
+
+  <%= f.label :image_file_name %>
+  <%= f.text_field :image_file_name %> 
+
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,20 @@
+
+<% @namespaces.each do |namespace| %>
+  <section class="namespace">
+    <div class="image">
+       <%= image_tag namespace.image_file_name %>
+    </div>
+    <div class="summary">
+      <h2>
+        <%= link_to namespace.name, namespace %>
+      </h2>
+      <h3>
+        <%= namespace.arb %>
+      </h3>
+    </div>
+  </section>
+<% end %>
+
+<section class="admin">
+  <%= link_to "Add new namespace", new_namespace_path, class: "button" %>
+</section>

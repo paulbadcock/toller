@@ -1,0 +1,16 @@
+<section class="namespace-details">
+  <div class="image">
+    <%= image_tag @namespace.image_file_name %>
+  </div>
+  <div class="details">
+    <h1>
+      <%= @namespace.name %>
+    </h1>
+  </div>
+</section>
+
+<section class="admin">
+  <%= link_to "Edit", edit_namespace_path(@namespace), class: "button" %>
+  <%= link_to "Delete", @namespace, class: "button", method: :delete,
+                  data: { confirm: "Really?!" } %>
+</section>

@@ -10,12 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_11_211841) do
+ActiveRecord::Schema.define(version: 2022_01_22_012940) do
 
   create_table "namespaces", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "arb", default: "0"
+    t.string "dept_name"
+    t.string "assyst_svd"
+    t.boolean "vendor_supported"
+    t.string "owner_email"
+    t.string "technical_owner_email"
+    t.string "support_document"
+    t.string "support_document_uri"
+    t.string "image_file_name", default: "placeholder.png"
   end
 
 end

@@ -6,4 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-namespaces = Namespace.create([{ name: 'default'}])
+Namespace.create!([
+  {
+    name: 'default'
+  },
+  {
+    name: 'sample'
+  }
+])
